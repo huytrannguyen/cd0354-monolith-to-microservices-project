@@ -26,4 +26,4 @@ after_success:
   - docker push huytran1996/udagram-api-feed:v1
   - docker push huytran1996/udagram-api-user:v1
   - docker push huytran1996/udagram-frontend:v1
-  - docker push huytran1996/reverseproxy:v1
+  - docker push huytran1996/udagram-reverseproxy:v1
