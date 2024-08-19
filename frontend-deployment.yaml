@@ -15,7 +15,7 @@ spec:
         service: frontend
     spec:
       containers:
-      - image: huytran1996/udagram-frontend:v4
+      - image: huytran1996/udagram-frontend:v5
         name: frontend
         imagePullPolicy: Always
         resources:

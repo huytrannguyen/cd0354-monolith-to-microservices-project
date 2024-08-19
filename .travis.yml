@@ -11,10 +11,10 @@ script:
 
   # Tagging images
   - echo '------TAGGING IMAGES------'
-  - docker tag udagram-api-feed huytran1996/udagram-api-feed:v4
-  - docker tag udagram-api-user huytran1996/udagram-api-user:v4
-  - docker tag udagram-frontend huytran1996/udagram-frontend:v4
-  - docker tag udagram-reverseproxy huytran1996/udagram-reverseproxy:v4
+  - docker tag udagram-api-feed huytran1996/udagram-api-feed:v5
+  - docker tag udagram-api-user huytran1996/udagram-api-user:v5
+  - docker tag udagram-frontend huytran1996/udagram-frontend:v5
+  - docker tag udagram-reverseproxy huytran1996/udagram-reverseproxy:v5
 
   - echo '------LISTING IMAGES------'
   - docker image ls
@@ -23,7 +23,7 @@ after_success:
   - echo '------LOGGING IN TO DOCKER------'
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - echo '------PUSHING IMAGES------'
-  - docker push huytran1996/udagram-api-feed:v4
-  - docker push huytran1996/udagram-api-user:v4
-  - docker push huytran1996/udagram-frontend:v4
-  - docker push huytran1996/udagram-reverseproxy:v4
+  - docker push huytran1996/udagram-api-feed:v5
+  - docker push huytran1996/udagram-api-user:v5
+  - docker push huytran1996/udagram-frontend:v5
+  - docker push huytran1996/udagram-reverseproxy:v5
