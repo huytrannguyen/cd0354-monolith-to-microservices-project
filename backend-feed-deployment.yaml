@@ -15,16 +15,12 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: huytran1996/udagram-api-feed:v5
+      - image: huytran1996/udagram-api-feed:v6
         name: backend-feed
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "512Mi"
             cpu: "150m"
-          limits:
-            memory: "1024Mi"
-            cpu: "300m"
         env:
         - name: URL
           valueFrom:
